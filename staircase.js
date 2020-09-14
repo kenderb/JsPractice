@@ -12,3 +12,4 @@ function staircase(n) {
 staircase(6);
 staircase(10);
 staircase(20);
+staircase(35);
