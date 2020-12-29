@@ -1,7 +1,7 @@
 
 const tweetForm = document.querySelector('#tweetForm');
 const tweetsContainer = document.querySelector('#tweets');
-tweetForm.addEventListener('submit', function (e) {
+tweetForm.addEventListener('submit',  (e) => {
     e.preventDefault();
     const usernameInput = tweetForm.elements.username;
     const tweetInput = tweetForm.elements.tweet;
@@ -22,7 +22,7 @@ const addTweet = (username, tweet) => {
     newTweet.append(button);
 }
 
-tweetsContainer.addEventListener('click', function (e) {
+tweetsContainer.addEventListener('click',  (e) => {
     e.target.nodeName === 'BUTTON' && e.target.parentNode.remove();
 })
 
