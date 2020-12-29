@@ -13,13 +13,13 @@ tweetForm.addEventListener('submit', function (e) {
 const addTweet = (username, tweet) => {
     const newTweet = document.createElement('li');
     const bTag = document.createElement('b');
-    bTag.append(username)
+    bTag.append(username);
     newTweet.append(bTag);
-    newTweet.append(`- ${tweet}`)
+    newTweet.append(`- ${tweet}`);
     tweetsContainer.append(newTweet);
     const button = document.createElement('button');
     button.innerHTML = 'Delete';
-    newTweet.append(button)
+    newTweet.append(button);
 }
 
 tweetsContainer.addEventListener('click', function (e) {
