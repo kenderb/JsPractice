@@ -17,9 +17,12 @@ const addTweet = (username, tweet) => {
     newTweet.append(bTag);
     newTweet.append(`- ${tweet}`)
     tweetsContainer.append(newTweet);
+    const button = document.createElement('button');
+    button.innerHTML = 'Delete';
+    newTweet.append(button)
 }
 
 tweetsContainer.addEventListener('click', function (e) {
-    e.target.nodeName === 'LI' && e.target.remove();
+    e.target.nodeName === 'BUTTON' && e.target.parentNode.remove();
 })
 
